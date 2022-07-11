@@ -1,0 +1,62 @@
+[
+  {
+    "id": "gui.updateModel.tileUpdate",
+    "description": "Tile of update modal in new external resource version detected",
+    "defaultMessage": "New external resource version detected"
+  },
+  {
+    "id": "gui.upgradeModal.upgradeLater",
+    "description": "Button in bottom to upgrade later",
+    "defaultMessage": "Upgrade later"
+  },
+  {
+    "id": "gui.upgradeModal.upgradeAndRestart",
+    "description": "Button in bottom to confirm upgrade and restart",
+    "defaultMessage": "Upgrade and restart"
+  },
+  {
+    "id": "gui.updateModel.tileChecking",
+    "description": "Tile of update modal in checking for update",
+    "defaultMessage": "Checking"
+  },
+  {
+    "id": "gui.updateModel.checkingTips",
+    "description": "Prompt for in checking update process",
+    "defaultMessage": "This step will take a few seconds, please wait."
+  },
+  {
+    "id": "gui.upgradeModal.closeChecking",
+    "description": "Button in bottom to close update modal",
+    "defaultMessage": "Close"
+  },
+  {
+    "id": "gui.updateModel.tileAlreadyLatest",
+    "description": "Tile of update modal in already latest",
+    "defaultMessage": "Already latest"
+  },
+  {
+    "id": "gui.updateModel.alreadyLatestTips",
+    "description": "Prompt for external source is already latest",
+    "defaultMessage": "External source is already latest."
+  },
+  {
+    "id": "gui.updateModel.upgrading",
+    "description": "Tile of update modal in upgrading",
+    "defaultMessage": "Upgrading"
+  },
+  {
+    "id": "gui.upgradeModal.downloading",
+    "description": "Prompt for in downloading porgress",
+    "defaultMessage": "Downloading"
+  },
+  {
+    "id": "gui.upgradeModal.covering",
+    "description": "Prompt for in covering porgress",
+    "defaultMessage": "Covering"
+  },
+  {
+    "id": "gui.updateModel.tileError",
+    "description": "Tile of update modal in error",
+    "defaultMessage": "Operation failed"
+  }
+]
