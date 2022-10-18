@@ -44,45 +44,45 @@ const deviceData = [
         programLanguage: ['block'],
         tags: ['realtime']
     },
+    // {
+    //     name: 'Arduino Uno',
+    //     deviceId: 'arduinoUno',
+    //     manufactor: 'arduino.cc',
+    //     leanMore: 'https://store.arduino.cc/usa/arduino-uno-rev3',
+    //     type: 'arduino',
+    //     iconURL: arduinoUnoIconURL,
+    //     description: (
+    //         <FormattedMessage
+    //             defaultMessage="A great board to get started with electronics and coding."
+    //             description="Description for the Arduino Uno device"
+    //             id="gui.device.arduinoUno.description"
+    //         />
+    //     ),
+    //     featured: true,
+    //     disabled: false,
+    //     bluetoothRequired: false,
+    //     serialportRequired: true,
+    //     defaultBaudRate: '115200',
+    //     internetConnectionRequired: false,
+    //     launchPeripheralConnectionFlow: true,
+    //     useAutoScan: false,
+    //     connectionIconURL: arduinoUnoConnectionIconURLL,
+    //     connectionSmallIconURL: arduinoUnoConnectionSmallIconURL,
+    //     connectingMessage: (
+    //         <FormattedMessage
+    //             defaultMessage="Connecting"
+    //             description="Message to help people connect to their arduino."
+    //             id="gui.device.arduino.connectingMessage"
+    //         />
+    //     ),
+    //     baseToolBoxXml: arduinoBaseToolBox,
+    //     programMode: ['realtime', 'upload'],
+    //     programLanguage: ['block', 'c', 'cpp'],
+    //     tags: ['arduino'],
+    //     helpLink: 'https://store.arduino.cc/usa/arduino-uno-rev3'
+    // },
     {
-        name: 'Arduino Uno',
-        deviceId: 'arduinoUno',
-        manufactor: 'arduino.cc',
-        leanMore: 'https://store.arduino.cc/usa/arduino-uno-rev3',
-        type: 'arduino',
-        iconURL: arduinoUnoIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="A great board to get started with electronics and coding."
-                description="Description for the Arduino Uno device"
-                id="gui.device.arduinoUno.description"
-            />
-        ),
-        featured: true,
-        disabled: false,
-        bluetoothRequired: false,
-        serialportRequired: true,
-        defaultBaudRate: '115200',
-        internetConnectionRequired: false,
-        launchPeripheralConnectionFlow: true,
-        useAutoScan: false,
-        connectionIconURL: arduinoUnoConnectionIconURLL,
-        connectionSmallIconURL: arduinoUnoConnectionSmallIconURL,
-        connectingMessage: (
-            <FormattedMessage
-                defaultMessage="Connecting"
-                description="Message to help people connect to their arduino."
-                id="gui.device.arduino.connectingMessage"
-            />
-        ),
-        baseToolBoxXml: arduinoBaseToolBox,
-        programMode: ['realtime', 'upload'],
-        programLanguage: ['block', 'c', 'cpp'],
-        tags: ['arduino'],
-        helpLink: 'https://store.arduino.cc/usa/arduino-uno-rev3'
-    },
-    {
-        name: 'Arduino Suny',
+        name: 'Arduino Kulbot',
         deviceId: 'arduinoSuny',
         manufactor: 'espressif',
         leanMore: 'https://www.espressif.com/',
@@ -113,8 +113,8 @@ const deviceData = [
             />
         ),
         baseToolBoxXml: arduinoBaseToolBox,
-        programMode: ['realtime', 'upload'],
-        programLanguage: ['block', 'c', 'cpp'],
+        programMode: ['upload'],
+        programLanguage: ['c', 'cpp'],
         tags: ['arduino'],
         helpLink: 'https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/hw-reference/esp32/get-started-devkitc.html'
     }

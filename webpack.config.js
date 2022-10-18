@@ -151,7 +151,7 @@ module.exports = [
             new HtmlWebpackPlugin({
                 chunks: ['lib.min', 'gui'],
                 template: 'src/playground/index.ejs',
-                title: 'Kulbot GUI',
+                title: 'KULBOT - FUTURE ENGINEER SCHOOL',
                 sentryConfig: process.env.SENTRY_CONFIG ? '"' + process.env.SENTRY_CONFIG + '"' : null
             }),
             new HtmlWebpackPlugin({
@@ -197,7 +197,7 @@ module.exports = [
         defaultsDeep({}, base, {
             target: 'web',
             entry: {
-                'kulbot-gui': './src/index.js'
+                'suny-gui': './src/index.js'
             },
             output: {
                 libraryTarget: 'umd',

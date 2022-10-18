@@ -101,7 +101,6 @@ class SerialportSession extends Session {
                         name: `${name} (${device.path})`
                     });
                 } else if (filters.pnpid.includes(pnpid)) {
-
                     this.reportedPeripherals[device.path] = device;
                     this.sendRemoteRequest('didDiscoverPeripheral', {
                         peripheralId: device.path,
@@ -132,7 +131,7 @@ class SerialportSession extends Session {
                 dataBits: peripheralConfig.config.dataBits,
                 stopBits: peripheralConfig.config.stopBits,
                 autoOpen: false,
-                rtscts: true
+                rtscts: peripheralConfig.config.rtscts ? peripheralConfig.config.rtscts : false
             });
             try {
                 port.open(error => {
@@ -282,10 +281,9 @@ class SerialportSession extends Session {
                 });
             }
             break;
-        case 'microbitV2':
         case 'microbit':
             tool = new Microbit(this.peripheral.path, config, this.userDataPath,
-                this.toolsPath, this.sendstd.bind(this), config.type);
+                this.toolsPath, this.sendstd.bind(this));
             try {
                 await this.disconnect();
                 await tool.flash(code, library);

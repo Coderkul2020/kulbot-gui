@@ -1,4 +1,4 @@
-const OpenBlockLink = require('./index');
+const SunyLink = require('./index');
 
-const link = new OpenBlockLink();
+const link = new SunyLink();
 link.listen();

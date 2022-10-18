@@ -34,7 +34,7 @@ const ROUTERS = {
 /**
  * A server to provide local hardware api.
  */
-class OpenBlockLink extends Emitter{
+class SunyLink extends Emitter{
     /**
      * Construct a Suny link server object.
      * @param {string} userDataPath - the path to save user data.
@@ -101,4 +101,4 @@ class OpenBlockLink extends Emitter{
     }
 }
 
-module.exports = OpenBlockLink;
+module.exports = SunyLink;

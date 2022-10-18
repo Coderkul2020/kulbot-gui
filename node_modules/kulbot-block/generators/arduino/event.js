@@ -25,7 +25,8 @@ goog.require('Blockly.Arduino');
 
 Blockly.Arduino['event_whenarduinobegin'] = function() {
   Blockly.Arduino.includes_["arduino"] = "#include <Arduino.h>";
-
+  Blockly.Arduino.includes_['include_suny'] = '#include <KULBOT.h>\nKULBOT Rob;\n';
+  Blockly.Arduino.setups_['setups_int'] = 'Rob.KULBOT_INIT();\n';
   var code = "";
   return code;
 };

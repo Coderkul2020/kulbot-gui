@@ -2,7 +2,7 @@
   "_args": [
     [
       "google-closure-library@20190301.0.0",
-      "/Users/lam/Scratch/kulbot-block"
+      "/Users/lam/Scratch/suny-blocks"
     ]
   ],
   "_development": true,
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/google-closure-library/-/google-closure-library-20190301.0.0.tgz",
   "_spec": "20190301.0.0",
-  "_where": "/Users/lam/Scratch/kulbot-block",
+  "_where": "/Users/lam/Scratch/suny-blocks",
   "author": {
     "name": "The Closure Library Authors"
   },

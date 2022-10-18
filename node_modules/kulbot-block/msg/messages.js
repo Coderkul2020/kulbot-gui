@@ -77,7 +77,7 @@ Blockly.Msg.DATA_INDEX_LAST = 'last';
 Blockly.Msg.DATA_INDEX_RANDOM = 'random';
 
 // Event blocks
-Blockly.Msg.EVENT_WHENARDUINOBEGIN = 'when Arduino begin';
+Blockly.Msg.EVENT_WHENARDUINOBEGIN = 'when Kulbot begin';
 Blockly.Msg.EVENT_WHENKULBOTBEGIN = "when Kulbot begin";
 Blockly.Msg.EVENT_WHENMICROBITBEGIN = 'when Microbit begin';
 Blockly.Msg.EVENT_WHENMICROBITBUTTONPRESSED = 'when button %1 pressed';

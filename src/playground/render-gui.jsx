@@ -8,7 +8,7 @@ import HashParserHOC from '../lib/hash-parser-hoc.jsx';
 import log from '../lib/log.js';
 
 const onClickLogo = () => {
-    window.location = 'https://Coderkul2020.github.io/wiki/';
+    window.location = 'https://lamsd.github.io/wiki/';
 };
 
 const onClickCheckUpdate = () => {

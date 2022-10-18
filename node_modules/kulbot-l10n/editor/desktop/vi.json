@@ -1,0 +1,16 @@
+{
+    "index.cameraPermissionDeniedMessage": "Quyền sử dụng máy ảnh đã bị từ chối. Suny sẽ không thể chụp ảnh hoặc sử dụng các khối cảm biến video.",
+    "index.cameraPermissionDeniedTitle": "Quyền truy cập camera bị từ chối",
+    "index.darwinPermissionDeniedInstructions": "Để thay đổi các quyền của Suny, vui lòng kiểm tra \"Bảo mật & Quyền riêng tư \" trong Tùy chọn Hệ thống.",
+    "index.failedLoadProject": "Không thể tải dự án từ tệp:",
+    "index.leave": "Rời khỏi",
+    "index.microphonePermissionDeniedMessage": "Quyền sử dụng micrô đã bị từ chối. Suny sẽ không thể ghi lại âm thanh hoặc phát hiện độ lớn.",
+    "index.microphonePermissionDeniedTitle": "Quyền đối với micrô bị từ chối",
+    "index.permissionDeniedInstructions": "Để thay đổi quyền của Suny, vui lòng kiểm tra cài đặt hệ thống của bạn và khởi động lại Suny.",
+    "index.permissionDeniedMessage": "Một sự cho phép đã bị từ chối.",
+    "index.permissionDeniedTitle": "sự cho phép bị từ chối",
+    "index.questionLeave": "Thoát app Suny?",
+    "index.questionLeaveDetail": "Mọi thay đổi chưa được lưu sẽ bị mất.",
+    "index.saveFailed": "Lưu thất bại:",
+    "index.stay": "Ở lại!"
+}

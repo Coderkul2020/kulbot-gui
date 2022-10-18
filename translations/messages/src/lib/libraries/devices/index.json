@@ -10,16 +10,6 @@
     "defaultMessage": "Unselect the deivce, return to pure realtime programming mode."
   },
   {
-    "id": "gui.device.arduinoUno.description",
-    "description": "Description for the Arduino Uno device",
-    "defaultMessage": "A great board to get started with electronics and coding."
-  },
-  {
-    "id": "gui.device.arduino.connectingMessage",
-    "description": "Message to help people connect to their arduino.",
-    "defaultMessage": "Connecting"
-  },
-  {
     "id": "gui.device.arduinoSuny.description",
     "description": "Description for the esp32 device",
     "defaultMessage": "Wi-Fi & Bluetooth control board with rich functions."

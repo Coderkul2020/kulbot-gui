@@ -48,7 +48,7 @@ Blockly.ScratchMsgs.locales["en"] =
     "DATA_INDEX_ALL": "all",
     "DATA_INDEX_LAST": "last",
     "DATA_INDEX_RANDOM": "random",
-    "EVENT_WHENARDUINOBEGIN": "when Arduino begin",
+    "EVENT_WHENARDUINOBEGIN": "when Kulbot begin",
     "EVENT_WHENKULBOTBEGIN": "when Kulbot begin",
     "EVENT_WHENMICROBITBEGIN": "when Microbit begin",
     "EVENT_WHENMICROBITBUTTONPRESSED": "when button %1 pressed",
