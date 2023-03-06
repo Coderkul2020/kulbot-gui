@@ -1,5 +1,5 @@
-# suny-blocks
-![](https://img.shields.io/travis/com/Coderkul2020/suny-blocks) ![](https://img.shields.io/github/license/Coderkul2020/suny-blocks)
+# kulbot-block
+![](https://img.shields.io/travis/com/Coderkul2020/kulbot-block) ![](https://img.shields.io/github/license/Coderkul2020/kulbot-block)
 
 ## Instructions
 
