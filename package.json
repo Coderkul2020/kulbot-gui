@@ -1,6 +1,6 @@
 {
   "name": "kulbot-gui",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "GraphicaL User Interface for creating and running Suny projects",
   "main": "./dist/scratch-gui.js",
   "scripts": {
@@ -96,7 +96,7 @@
     "kulbot-l10n": "0.2.0",
     "kulbot-link": "0.2.0",
     "kulbot-save-svg-as-png": "0.2.0",
-    "kulbot-vm": "0.2.1",
+    "kulbot-vm": "0.2.2",
     "text-encoding": "0.7.0",
     "to-style": "1.3.3",
     "wav-encoder": "1.3.0",
