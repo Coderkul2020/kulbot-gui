@@ -70,6 +70,10 @@ Blockly.Arduino['operator_compare'] = function(block) {
   if (arg1 === "\"\"") {
     arg1 = '0';
   }
+
+  arg0 = arg0.replace(/[\"]/g,"\'");
+  arg1 = arg1.replace(/[\"]/g,"\'");
+
   // Arg is a number
   if (parseFloat(arg0.slice(1, -1)) == arg0.slice(1, -1)) {
     arg0 = parseFloat(arg0.slice(1, -1)).toString();

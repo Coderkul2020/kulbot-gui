@@ -191,33 +191,20 @@ Blockly.Arduino.finish = function(code) {
     ret += customFunctions.join('\n\n') + "\n\n";
   }
 
-  // setup()
-  ret += "void setup() {\n";
-  if (setups.length != 0) {
-    ret += Blockly.Arduino.INDENT + setups.join('\n' + Blockly.Arduino.INDENT) + "\n";
-  }
-  //  edit lai thong tin 
-    ret += "}\n";
-    ret += "void loop() {\n";
-    ret += code;
-    ret += "}\n";
-  //
-
-
   // edit lai thong tin 
     // setup()
-    // ret += "void setup() {\n";
-    // if (setups.length != 0) {
-    //   ret += Blockly.Arduino.INDENT + setups.join('\n' + Blockly.Arduino.INDENT) + "\n";
-    // }
-    // ret += code;
-    // ret += "}\n";
+    ret += "void setup() {\n";
+    if (setups.length != 0) {
+      ret += Blockly.Arduino.INDENT + setups.join('\n' + Blockly.Arduino.INDENT) + "\n";
+    }
+    ret += code;
+    ret += "}\n";
 
-    // // loop()
-    // // if there is no loop add a empty loop function.
-    // if (Blockly.Arduino.firstLoop) {
-    //   ret += "\nvoid loop() {\n" + Blockly.Arduino.INDENT + "repeat();\n}\n";
-    // }
+    // loop()
+    // if there is no loop add a empty loop function.
+    if (Blockly.Arduino.firstLoop) {
+      ret += "\nvoid loop() {\n" + Blockly.Arduino.INDENT + "repeat();\n}\n";
+    }
   // 
 
 

@@ -39,9 +39,9 @@
   var arg2 = Blockly.Arduino.valueToCode(block, 'CEL', Blockly.Arduino.ORDER_UNARY_POSTFIX) || 0;
   var arg3 = Blockly.Arduino.valueToCode(block, 'DATA', Blockly.Arduino.ORDER_UNARY_POSTFIX) || 'Hello!!!';
   if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_LCD_INIT(' + arg0 + ')') == -1)
-  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_LCD_INIT(' + arg0 + ');\n'
+  Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_LCD_INIT(' + arg0 + ');\n'
   if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SENSOR_INIT()') == -1)
-  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SENSOR_INIT();\n'
+  Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SENSOR_INIT();\n'
   if (arg1 < 0) arg1 = 0;
   else if (arg1 > 16) arg1 = 16;
   if (arg2 < 0) arg2=0;
@@ -56,9 +56,9 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
   var arg2 = Blockly.Arduino.valueToCode(block, 'CEL', Blockly.Arduino.ORDER_UNARY_POSTFIX) || 0;
   var arg3 = Blockly.Arduino.valueToCode(block, 'NUMBER', Blockly.Arduino.ORDER_UNARY_POSTFIX) || 0;
   if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_LCD_INIT(' + arg0 + ')') == -1)
-  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_LCD_INIT(' + arg0 + ');\n'
+  Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_LCD_INIT(' + arg0 + ');\n'
   if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SENSOR_INIT()') == -1)
-  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SENSOR_INIT();\n';
+  Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SENSOR_INIT();\n';
   if (arg1 < 0) arg1 = 0;
   else if (arg1 > 16) arg1 = 16;
   if (arg2 < 0) arg2=0;
@@ -72,9 +72,9 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
     var arg1 = block.getFieldValue('COLOR') || '0';
     var arg2 = block.getFieldValue('STATUS') || '0';
     if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SENSOR_INIT') == -1)
-    Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SENSOR_INIT();\n'
+    Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SENSOR_INIT();\n'
     if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_TRAFFIC_LIGHT_INIT(' + arg0 + ');\n') == -1)
-    Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_TRAFFIC_LIGHT_INIT(' + arg0 + ');\n';
+    Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_TRAFFIC_LIGHT_INIT(' + arg0 + ');\n';
     return 'Rob.KULBOT_SET_TRAFFIC_LIGHT(' + arg0 + ',' + arg1 + ',' + arg2 + ');\n';
   };
 
@@ -88,9 +88,9 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
     // else if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_INIT();\n') == -1)
     // Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_INIT();\n';
     if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SENSOR_INIT') == -1)
-    Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SENSOR_INIT();\n'
+    Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SENSOR_INIT();\n'
     if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_BUTTON_LED_INIT(' + arg0 + ')') == -1)
-    Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_BUTTON_LED_INIT(' + arg0 + ');\n';
+    Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_BUTTON_LED_INIT(' + arg0 + ');\n';
     var code = 'Rob.KULBOT_GET_BUTTON_LED(' + arg0 + ',' + arg1 + ')';
       return [code, Blockly.Arduino.ORDER_ATOMIC];
   };
@@ -100,9 +100,9 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
     var arg0 = block.getFieldValue('PORT') || '0';
     var arg1 = block.getFieldValue('DATA') || '0';
     if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SENSOR_INIT') == -1)
-    Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SENSOR_INIT();\n'
+    Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SENSOR_INIT();\n'
     if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_GRYRO_SENSOR_INIT(' + arg0 + ')') == -1)
-    Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_GRYRO_SENSOR_INIT(' + arg0 + ');\n';
+    Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_GRYRO_SENSOR_INIT(' + arg0 + ');\n';
     var code = 'Rob.KULBOT_GET_GRYRO_SENSOR(' + arg0 + ',' + arg1 + ')';
       return [code, Blockly.Arduino.ORDER_ATOMIC];
   };
@@ -111,9 +111,9 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
   Blockly.Arduino['arduino_sensor_eps32GetSoilHum'] = function(block) {
     var arg0 = block.getFieldValue('PORT') || '0';
     if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SENSOR_INIT') == -1)
-    Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SENSOR_INIT();\n'
+    Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SENSOR_INIT();\n'
     if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SOIL_HUM_SENSOR_INIT(' + arg0 + ')') == -1)
-    Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SOIL_HUM_SENSOR_INIT(' + arg0 + ');\n';
+    Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SOIL_HUM_SENSOR_INIT(' + arg0 + ');\n';
     var code = 'Rob.KULBOT_GET_SOIL_HUM_SENSOR(' + arg0 + ')';
       return [code, Blockly.Arduino.ORDER_ATOMIC];
   };
@@ -122,9 +122,9 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
   Blockly.Arduino['arduino_sensor_eps32SHum'] = function(block) {
     var arg0 = block.getFieldValue('PORT') || '1';
     if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SENSOR_INIT') == -1)
-    Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SENSOR_INIT();\n'
+    Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SENSOR_INIT();\n'
     if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_DHT_SENSOR_INIT(' + arg0 + ')') == -1)
-    Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_DHT_SENSOR_INIT(' + arg0 + ');\n';
+    Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_DHT_SENSOR_INIT(' + arg0 + ');\n';
     var code = 'Rob.KULBOT_GET_HUM_DHT_SENSOR(' + arg0 +')';
       return [code, Blockly.Arduino.ORDER_ATOMIC];
   };
@@ -133,7 +133,7 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
   Blockly.Arduino['arduino_pin_esp32OffLed'] = function(block) {
     var arg0 = block.getFieldValue('PORT') || '1';
     if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_RGB_INIT') == -1)
-     Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_RGB_INIT(100);\n'
+     Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_RGB_INIT(100);\n'
     return 'Rob.KULBOT_RGB_OFF(' + arg0 + ');\n';
   };
 
@@ -146,7 +146,7 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
   // else if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_INIT();\n') == -1)
   // Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_INIT();\n';
   if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_RGB_INIT') == -1)
-  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_RGB_INIT(100);\n';
+  Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_RGB_INIT(100);\n';
   let code = '';
   if (arg1 != '-1')
     code = 'Rob.KULBOT_RGB_ALL_ON(' + arg1 + ');\n';
@@ -161,7 +161,7 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
     // else if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_INIT();\n') == -1)
     // Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_INIT();\n';
     if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_RGB_INIT') == -1)
-    Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_RGB_INIT(100);\n';
+    Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_RGB_INIT(100);\n';
     return 'Rob.KULBOT_RGB_ALL_OFF();\n';
   };
 
@@ -175,7 +175,7 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
   //  else if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_INIT();\n') == -1)
   //  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_INIT();\n';
   if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_RGB_INIT') == -1)
-  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_RGB_INIT();\n';
+  Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_RGB_INIT();\n';
    let code = '';
    if (arg0 == 'HIGH' && arg1 != -1) {
      code = 'Rob.SetAllLed(' + arg1 + ');\n';
@@ -193,7 +193,7 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
   //  else if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_INIT();\n') == -1)
   //  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_INIT();\n';
   if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_RGB_INIT') == -1)
-  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_RGB_INIT(100);\n';
+  Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_RGB_INIT(100);\n';
    let code = '';
    if ( arg1 != -1) {
      code = 'Rob.KULBOT_RGB_ON(' + arg0 +','+ arg1 + ');\n';
@@ -209,7 +209,7 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
   //  else if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_INIT();\n') == -1)
   //  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_INIT();\n';
   if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SENSOR_INIT') == -1)
-  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SENSOR_INIT();\n';
+  Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SENSOR_INIT();\n';
    var code = 'Rob.KULBOT_GET_SONAR_SENSOR('+arg0+')';
    return [code, Blockly.Arduino.ORDER_ATOMIC];
  };
@@ -223,9 +223,9 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
    //  else if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_INIT();\n') == -1)
    //  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_INIT();\n';
    if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SENSOR_INIT') == -1)
-   Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SENSOR_INIT();\n'
+   Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SENSOR_INIT();\n'
    if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_VOLUME_INIT(' + arg0 + ')') == -1)
-   Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_VOLUME_INIT(' + arg0 + ');\n';
+   Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_VOLUME_INIT(' + arg0 + ');\n';
     var code = 'Rob.KULBOT_GET_VOLUME_SENSOR('+arg0+')';
     return [code, Blockly.Arduino.ORDER_ATOMIC];
   };
@@ -239,9 +239,9 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
      //  else if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_INIT();\n') == -1)
      //  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_INIT();\n';
      if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SENSOR_INIT') == -1)
-     Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SENSOR_INIT();\n'
+     Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SENSOR_INIT();\n'
      if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_LIGHT_SENSOR_INIT(' + arg0 + ')') == -1)
-     Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_LIGHT_SENSOR_INIT(' + arg0 + ');\n';
+     Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_LIGHT_SENSOR_INIT(' + arg0 + ');\n';
       var code = 'Rob.KULBOT_GET_LIGHT_SENSOR('+arg0+')';
       return [code, Blockly.Arduino.ORDER_ATOMIC];
     };
@@ -251,9 +251,9 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
  Blockly.Arduino['arduino_sensor_eps32STemp'] = function(block) {
    var arg0 = block.getFieldValue('PIN') || '0';
    if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SENSOR_INIT') == -1)
-   Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SENSOR_INIT();\n'
+   Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SENSOR_INIT();\n'
    if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_DHT_SENSOR_INIT(' + arg0 + ')') == -1)
-   Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_DHT_SENSOR_INIT(' + arg0 + ');\n';
+   Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_DHT_SENSOR_INIT(' + arg0 + ');\n';
    var code = 'Rob.KULBOT_GET_TEMP_DHT_SENSOR('+arg0+')';
    return [code, Blockly.Arduino.ORDER_ATOMIC];
  };
@@ -263,9 +263,9 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
     var arg0 = block.getFieldValue('PORT') || '0';
     var arg1 = block.getFieldValue('TYPE') || '0';
     if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SENSOR_INIT') == -1)
-    Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SENSOR_INIT();\n'
+    Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SENSOR_INIT();\n'
     if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_JOYSTICK_SENSOR_INIT(' + arg0 + ')') == -1)
-    Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_JOYSTICK_SENSOR_INIT(' + arg0 + ');\n';
+    Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_JOYSTICK_SENSOR_INIT(' + arg0 + ');\n';
     var code = 'Rob.KULBOT_GET_JOYSTICK_SENSOR(' + arg0 + ',' + arg1+')';
     return [code, Blockly.Arduino.ORDER_ATOMIC];
   };
@@ -274,9 +274,9 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
   Blockly.Arduino['arduino_sensor_eps32GetGas'] = function(block) {
     var arg0 = block.getFieldValue('PORT') || '0';
     if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SENSOR_INIT') == -1)
-    Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SENSOR_INIT();\n'
+    Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SENSOR_INIT();\n'
     if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_GAS_SENSOR_INIT(' + arg0 + ')') == -1)
-    Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_GAS_SENSOR_INIT(' + arg0 + ');\n';
+    Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_GAS_SENSOR_INIT(' + arg0 + ');\n';
     var code = 'Rob.KULBOT_GET_GAS_SENSOR('+ arg0 + ')';
     return [code, Blockly.Arduino.ORDER_ATOMIC];
   };
@@ -286,9 +286,9 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
  Blockly.Arduino['arduino_sensor_eps32STouch'] = function(block) {
    var arg0 = block.getFieldValue('PIN') || '0';
    if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SENSOR_INIT') == -1)
-   Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SENSOR_INIT();\n'
+   Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SENSOR_INIT();\n'
    if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_TOUCH_SENSOR_INIT(' + arg0 + ')') == -1)
-   Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_TOUCH_SENSOR_INIT(' + arg0 + ');\n';
+   Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_TOUCH_SENSOR_INIT(' + arg0 + ');\n';
    var code = 'Rob.KULBOT_GET_TOUCH_SENSOR('+arg0+')';
    return [code, Blockly.Arduino.ORDER_ATOMIC];
  };
@@ -299,9 +299,9 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
    var arg0 = block.getFieldValue('PIN') || '0';
    var arg1 = block.getFieldValue('VLE') || '0';
    if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SENSOR_INIT') == -1)
-   Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SENSOR_INIT();\n'
+   Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SENSOR_INIT();\n'
    if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_LINE_SENSOR_INIT(' + arg0 + ')') == -1)
-   Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_LINE_SENSOR_INIT(' + arg0 + ');\n';
+   Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_LINE_SENSOR_INIT(' + arg0 + ');\n';
    var code = 'Rob.KULBOT_GET_LINE_SENSOR('+arg0+','+arg1+')';
    return [code, Blockly.Arduino.ORDER_ATOMIC];
  };
@@ -310,9 +310,9 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
  Blockly.Arduino['arduino_sensor_eps32SIR'] = function(block) {
    var arg0 = block.getFieldValue('PIN') || '0';
    if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SENSOR_INIT') == -1)
-   Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SENSOR_INIT();\n'
+   Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SENSOR_INIT();\n'
    if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_IR_SENSOR_INIT(' + arg0 + ')') == -1)
-   Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_IR_SENSOR_INIT(' + arg0 + ');\n';
+   Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_IR_SENSOR_INIT(' + arg0 + ');\n';
    var code = 'Rob.KULBOT_GET_IR_SENSOR('+arg0+')';
    return [code, Blockly.Arduino.ORDER_ATOMIC];
  };
@@ -322,9 +322,9 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
   var arg0 = block.getFieldValue('PORT') || '1';
   var arg1 = block.getFieldValue('COLOR') || '0';
   if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SENSOR_INIT') == -1)
-  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SENSOR_INIT();\n'
+  Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SENSOR_INIT();\n'
   if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_IR_SENSOR_INIT(' + arg0 + ')') == -1)
-  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_IR_SENSOR_INIT(' + arg0 + ');\n';
+  Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_IR_SENSOR_INIT(' + arg0 + ');\n';
   return 'Rob.KULBOT_SET_IR_SENSOR_LED(' + arg0 + ',' + arg1 + ');\n';
 };
 
@@ -332,7 +332,7 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
  Blockly.Arduino['arduino_display_esp32lcdClear'] = function(block) {
   var arg0 = block.getFieldValue('PORT') || '1';
   if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_LCD_INIT(' + arg0 + ')') == -1)
-  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_LCD_INIT(' + arg0 + ');\n';
+  Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_LCD_INIT(' + arg0 + ');\n';
   return 'Rob.KULBOT_LCD_CLEAR(' + arg0 + ');\n';
 };
  
@@ -341,9 +341,9 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
   var arg0 = block.getFieldValue('PORT') || '1';
   var arg1 = block.getFieldValue('COLOR') || '-1';
   if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_SENSOR_INIT') == -1)
-  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SENSOR_INIT();\n'
+  Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SENSOR_INIT();\n'
   if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_BUTTON_LED_INIT(' + arg0 + ')') == -1)
-  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_BUTTON_LED_INIT(' + arg0 + ');\n';
+  Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_BUTTON_LED_INIT(' + arg0 + ');\n';
   let code="";
   if (arg1 !== '-1')
     code =  'Rob.KULBOT_SET_BUTTON_LED(' + arg0 + ',' + arg1 + ');\n';
@@ -361,7 +361,7 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
   //  else if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_INIT();\n') == -1)
   //  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_INIT();\n';
   if (Blockly.Arduino.setups_['setups_int'].indexOf('KULBOT_MOTORENCODER_INIT') == -1)
-  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_MOTORENCODER_INIT();\n';
+  Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_MOTORENCODER_INIT();\n';
    var code = 'Rob.KULBOT_MOTORENCODER_RUN1('+arg0+','+  arg2 + ',' + arg1 + '); \n';
    return code;
  };
@@ -377,7 +377,7 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
   //  else if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_INIT();\n') == -1)
   //  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_INIT();\n';
   if (Blockly.Arduino.setups_['setups_int'].indexOf('KULBOT_SERVO_INIT') == -1)
-  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_SERVO_INIT();\n';
+  Blockly.Arduino.setups_['setups_int'] += '  Rob.KULBOT_SERVO_INIT();\n';
    var code = 'Rob.KULBOT_SERVO_SET_ANGLE('+arg0 +','+arg1+');\n';
  
    return code;
@@ -615,4 +615,97 @@ Blockly.Arduino['arduino_bluetooth_bluetoothRead'] = function(block) {
   //  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_INIT();\n';
    var code = 'SerialBT.read()';
    return [code, Blockly.Arduino.ORDER_ATOMIC];
+ };
+
+ Blockly.Arduino['arduino_variable_createvarchar'] = function(block) {
+  var arg0 = Blockly.Arduino.valueToCode(block, 'NAME', Blockly.Arduino.ORDER_UNARY_POSTFIX) || 'c';
+  var arg1 = Blockly.Arduino.valueToCode(block, 'CHAR', Blockly.Arduino.ORDER_UNARY_POSTFIX) || '';
+  //  Blockly.Arduino.includes_['include_suny'] = '#include <KULBOT.h>\nKULBOT Rob;\n';
+  //  if (Blockly.Arduino.setups_['setups_int'] == undefined)
+  //   Blockly.Arduino.setups_['setups_int'] = 'Rob.KULBOT_INIT();\n';
+  //  else if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_INIT();\n') == -1)
+  //  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_INIT();\n';
+
+  let code = '';
+  // kh nhap ki tu
+  if (arg1 === '""'){
+    let length0 = arg0.length;
+    arg0 = arg0.substr(1,length0-2);
+    arg1 = 'NULL'
+    code = 'char ' + arg0 + ' = ' + arg1 + ';\n'
+    return code;
+  }
+  // co nhap ki tu
+  else {
+    let length0 = arg0.length;
+    arg0 = arg0.substr(1,length0-2);
+    if (arg1 === '"NULL"') code = arg0 + ' = NULL;\n';
+    // nhap chuoi
+    else if (arg1.charAt(0) === '"' && arg1.charAt(arg1.length-1) === '"'){
+      arg1 = arg1.charAt(1);
+      code = 'char ' + arg0 + ' = \'' + arg1 + '\';\n';
+    }
+    else /*if (arg1 === 'NULL'){
+      code = arg0 + ' = ' + arg1 + ';\n';
+    }
+    else*/ code = 'char ' + arg0 + ' = ' + arg1 + ';\n';
+  }
+    //code = arg0 + ' = ' + arg1 + ';\n';
+  return code;
+
+  // if (typeof arg0 === 'string' || arg0 instanceof String)
+  // return 'string' + ' ' + arg0
+  // else return 'no-string\n';
+  
+  //return arg0.length;
+ };
+
+ Blockly.Arduino['arduino_variable_setvarchar'] = function(block) {
+  var arg0 = Blockly.Arduino.valueToCode(block, 'NAME', Blockly.Arduino.ORDER_UNARY_POSTFIX) || 'c';
+  var arg1 = Blockly.Arduino.valueToCode(block, 'CHAR', Blockly.Arduino.ORDER_UNARY_POSTFIX) || 'undefined';
+  //  Blockly.Arduino.includes_['include_suny'] = '#include <KULBOT.h>\nKULBOT Rob;\n';
+  //  if (Blockly.Arduino.setups_['setups_int'] == undefined)
+  //   Blockly.Arduino.setups_['setups_int'] = 'Rob.KULBOT_INIT();\n';
+  //  else if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_INIT();\n') == -1)
+  //  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_INIT();\n';
+  let code = '';
+  // kh nhap ki tu
+  if (arg1 === '""'){
+    let length0 = arg0.length;
+    arg0 = arg0.substr(1,length0-2);
+    arg1 = 'NULL'
+    code = arg0 + ' = ' + arg1 + ';\n'
+    return code;
+  }
+  // co nhap ki tu
+  else {
+    let length0 = arg0.length;
+    arg0 = arg0.substr(1,length0-2);
+    if (arg1 === '"NULL"') code = arg0 + ' = NULL;\n';
+    // nhap chuoi
+    else if (arg1.charAt(0) === '"' && arg1.charAt(arg1.length-1) === '"'){
+      arg1 = arg1.charAt(1);
+      code = arg0 + ' = \'' + arg1 + '\';\n';
+    }
+    else /*if (arg1 === 'NULL'){
+      code = arg0 + ' = ' + arg1 + ';\n';
+    }
+    else*/ code = arg0 + ' = ' + arg1 + ';\n';
+    
+    //code = arg0 + ' = ' + arg1 + ';\n';
+    return code;
+  }
+ };
+
+ Blockly.Arduino['arduino_variable_getvarchar'] = function(block) {
+  // var arg0 = Blockly.Arduino.valueToCode(block, 'DATA', Blockly.Arduino.ORDER_UNARY_POSTFIX) || '0';
+  //  Blockly.Arduino.includes_['include_suny'] = '#include <KULBOT.h>\nKULBOT Rob;\n';
+  //  if (Blockly.Arduino.setups_['setups_int'] == undefined)
+  //   Blockly.Arduino.setups_['setups_int'] = 'Rob.KULBOT_INIT();\n';
+  //  else if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_INIT();\n') == -1)
+  //  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_INIT();\n';
+  var arg0 = Blockly.Arduino.valueToCode(block, 'NAME', Blockly.Arduino.ORDER_UNARY_POSTFIX) || 'c';
+  let length0 = arg0.length;
+  arg0 = arg0.substr(1, length0 - 2);
+  return [arg0, Blockly.Arduino.ORDER_ATOMIC];
  };
