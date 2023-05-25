@@ -583,6 +583,36 @@ Blockly.Arduino['arduino_display_esp32lcdNumber'] = function(block) {
    var code = 'toascii(String(' + arg0 + ')[0])';
    return [code, Blockly.Arduino.ORDER_ATOMIC];
  };
+
+ Blockly.Arduino['arduino_bluetooth_setupbluetooth'] = function(block) {
+  var arg0 = Blockly.Arduino.valueToCode(block, 'NAME', Blockly.Arduino.ORDER_UNARY_POSTFIX) || 'Bluetooth Name';
+  Blockly.Arduino.includes_['include_suny'] += '#include \"BluetoothSerial.h\"\n#if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)\n#error Bluetooth is not enabled! Please run `make menuconfig` to and enable it\n#endif\nBluetoothSerial SerialBT;';
+ //  if (Blockly.Arduino.setups_['setups_int'] == undefined)
+  Blockly.Arduino.setups_['setups_int'] += 'SerialBT.begin(' + arg0 + ');\n';
+ //  else if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_INIT();\n') == -1)
+ //  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_INIT();\n';
+  return '';
+};
  
  
- 
+Blockly.Arduino['arduino_bluetooth_bluetoothAvailable'] = function(block) {
+ // var arg0 = Blockly.Arduino.valueToCode(block, 'DATA', Blockly.Arduino.ORDER_UNARY_POSTFIX) || '0';
+ //  Blockly.Arduino.includes_['include_suny'] = '#include <KULBOT.h>\nKULBOT Rob;\n';
+ //  if (Blockly.Arduino.setups_['setups_int'] == undefined)
+ //   Blockly.Arduino.setups_['setups_int'] = 'Rob.KULBOT_INIT();\n';
+ //  else if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_INIT();\n') == -1)
+ //  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_INIT();\n';
+  var code = 'SerialBT.available()';
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+Blockly.Arduino['arduino_bluetooth_bluetoothRead'] = function(block) {
+  // var arg0 = Blockly.Arduino.valueToCode(block, 'DATA', Blockly.Arduino.ORDER_UNARY_POSTFIX) || '0';
+  //  Blockly.Arduino.includes_['include_suny'] = '#include <KULBOT.h>\nKULBOT Rob;\n';
+  //  if (Blockly.Arduino.setups_['setups_int'] == undefined)
+  //   Blockly.Arduino.setups_['setups_int'] = 'Rob.KULBOT_INIT();\n';
+  //  else if (Blockly.Arduino.setups_['setups_int'].indexOf('Rob.KULBOT_INIT();\n') == -1)
+  //  Blockly.Arduino.setups_['setups_int'] += 'Rob.KULBOT_INIT();\n';
+   var code = 'SerialBT.read()';
+   return [code, Blockly.Arduino.ORDER_ATOMIC];
+ };
