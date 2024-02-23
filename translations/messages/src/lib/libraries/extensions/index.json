@@ -58,5 +58,15 @@
     "id": "gui.extension.makeymakey.description",
     "description": "Description for the 'Makey Makey' extension",
     "defaultMessage": "Make anything into a key."
+  },
+  {
+    "id": "gui.extension.MyExtension.name",
+    "description": "Name for the Sensor extension",
+    "defaultMessage": "sensor"
+  },
+  {
+    "id": "gui.extension.MyExtension.description",
+    "description": "Description for the 'Sensor' extension",
+    "defaultMessage": "Make anything into a key."
   }
 ]

@@ -25,6 +25,10 @@ const CodeEditorComponent = props => {
             className={styles.codeEditor}
             componentRef={containerRef}
         >
+            <button style={{height: "25px", width: "100px",float: "right", zIndex: "1", position: "relative", top: "5px"}} 
+                    onClick={() => {navigator.clipboard.writeText(value)}}>
+                    Copy code
+            </button>
             <MonacoEditor
                 language={language}
                 value={value}
@@ -36,6 +40,8 @@ const CodeEditorComponent = props => {
                 theme={theme}
                 {...componentProps}
             />
+            
+            
         </Box>
     );
 };

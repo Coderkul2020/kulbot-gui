@@ -58,13 +58,13 @@ class CodeEditor extends React.Component {
             ...props
         } = this.props;
         return (
-            <CodeEditorComponent
-                value={this.props.codeEditorValue}
-                language={language}
-                height={this.state.clientHeight}
-                containerRef={this.containerRef}
-                {...props}
-            />
+                <CodeEditorComponent
+                    value={this.props.codeEditorValue}
+                    language={language}
+                    height={this.state.clientHeight}
+                    containerRef={this.containerRef}
+                    {...props}
+                />
         );
     }
 }

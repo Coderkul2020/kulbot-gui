@@ -30,6 +30,12 @@ const messages = defineMessages({
         description: 'A message that displays in a variable modal when the stage is selected indicating ' +
             'that the variable being created will available to all sprites.',
         id: 'gui.gui.variablePromptAllSpritesMessage'
+    },
+    typeVarCharMessage: {
+        defaultMessage: 'Char',
+        description: 'A message that displays in a variable modal when the stage is selected indicating ' +
+            'that the variable being created will available to all sprites.',
+        id: 'gui.gui.typeVarCharMessagePromtMessage'
     }
 });
 
@@ -63,6 +69,18 @@ const PromptComponent = props => (
                             />
                         </div> :
                         <Box className={styles.optionsRow}>
+                            <label>
+                                <input
+                                    checked={props.globalSelected}
+                                    name="variableType"
+                                    type="radio"
+                                    value="char"
+                                    onChange={props.onScopeOptionSelection}
+                                />
+                                <FormattedMessage
+                                    {...messages.typeVarCharMessage}
+                                />
+                            </label>
                             <label>
                                 <input
                                     checked={props.globalSelected}

@@ -87,9 +87,9 @@
 /******/ ({
 
 /***/ "./node_modules/kulbot-vm/node_modules/microee/index.js":
-/*!************************************************************!*\
+/*!**************************************************************!*\
   !*** ./node_modules/kulbot-vm/node_modules/microee/index.js ***!
-  \************************************************************/
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -148,9 +148,9 @@ module.exports = M;
 /***/ }),
 
 /***/ "./node_modules/kulbot-vm/node_modules/minilog/lib/common/filter.js":
-/*!************************************************************************!*\
+/*!**************************************************************************!*\
   !*** ./node_modules/kulbot-vm/node_modules/minilog/lib/common/filter.js ***!
-  \************************************************************************/
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -215,9 +215,9 @@ module.exports = Filter;
 /***/ }),
 
 /***/ "./node_modules/kulbot-vm/node_modules/minilog/lib/common/minilog.js":
-/*!*************************************************************************!*\
+/*!***************************************************************************!*\
   !*** ./node_modules/kulbot-vm/node_modules/minilog/lib/common/minilog.js ***!
-  \*************************************************************************/
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -271,9 +271,9 @@ exports.enable = function() {
 /***/ }),
 
 /***/ "./node_modules/kulbot-vm/node_modules/minilog/lib/common/transform.js":
-/*!***************************************************************************!*\
+/*!*****************************************************************************!*\
   !*** ./node_modules/kulbot-vm/node_modules/minilog/lib/common/transform.js ***!
-  \***************************************************************************/
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -354,9 +354,9 @@ module.exports = Transform;
 /***/ }),
 
 /***/ "./node_modules/kulbot-vm/node_modules/minilog/lib/web/array.js":
-/*!********************************************************************!*\
+/*!**********************************************************************!*\
   !*** ./node_modules/kulbot-vm/node_modules/minilog/lib/web/array.js ***!
-  \********************************************************************/
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -379,9 +379,9 @@ module.exports = logger;
 /***/ }),
 
 /***/ "./node_modules/kulbot-vm/node_modules/minilog/lib/web/console.js":
-/*!**********************************************************************!*\
+/*!************************************************************************!*\
   !*** ./node_modules/kulbot-vm/node_modules/minilog/lib/web/console.js ***!
-  \**********************************************************************/
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -422,9 +422,9 @@ module.exports = logger;
 /***/ }),
 
 /***/ "./node_modules/kulbot-vm/node_modules/minilog/lib/web/formatters/color.js":
-/*!*******************************************************************************!*\
+/*!*********************************************************************************!*\
   !*** ./node_modules/kulbot-vm/node_modules/minilog/lib/web/formatters/color.js ***!
-  \*******************************************************************************/
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -451,9 +451,9 @@ module.exports = logger;
 /***/ }),
 
 /***/ "./node_modules/kulbot-vm/node_modules/minilog/lib/web/formatters/minilog.js":
-/*!*********************************************************************************!*\
+/*!***********************************************************************************!*\
   !*** ./node_modules/kulbot-vm/node_modules/minilog/lib/web/formatters/minilog.js ***!
-  \*********************************************************************************/
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -488,9 +488,9 @@ module.exports = logger;
 /***/ }),
 
 /***/ "./node_modules/kulbot-vm/node_modules/minilog/lib/web/formatters/util.js":
-/*!******************************************************************************!*\
+/*!********************************************************************************!*\
   !*** ./node_modules/kulbot-vm/node_modules/minilog/lib/web/formatters/util.js ***!
-  \******************************************************************************/
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -519,9 +519,9 @@ module.exports = color;
 /***/ }),
 
 /***/ "./node_modules/kulbot-vm/node_modules/minilog/lib/web/index.js":
-/*!********************************************************************!*\
+/*!**********************************************************************!*\
   !*** ./node_modules/kulbot-vm/node_modules/minilog/lib/web/index.js ***!
-  \********************************************************************/
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -572,9 +572,9 @@ exports.backends = {
 /***/ }),
 
 /***/ "./node_modules/kulbot-vm/node_modules/minilog/lib/web/jquery_simple.js":
-/*!****************************************************************************!*\
+/*!******************************************************************************!*\
   !*** ./node_modules/kulbot-vm/node_modules/minilog/lib/web/jquery_simple.js ***!
-  \****************************************************************************/
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -657,9 +657,9 @@ module.exports = AjaxLogger;
 /***/ }),
 
 /***/ "./node_modules/kulbot-vm/node_modules/minilog/lib/web/localstorage.js":
-/*!***************************************************************************!*\
+/*!*****************************************************************************!*\
   !*** ./node_modules/kulbot-vm/node_modules/minilog/lib/web/localstorage.js ***!
-  \***************************************************************************/
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -682,9 +682,9 @@ module.exports = logger;
 /***/ }),
 
 /***/ "./node_modules/kulbot-vm/src/dispatch/shared-dispatch.js":
-/*!**************************************************************!*\
+/*!****************************************************************!*\
   !*** ./node_modules/kulbot-vm/src/dispatch/shared-dispatch.js ***!
-  \**************************************************************/
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -926,9 +926,9 @@ module.exports = SharedDispatch;
 /***/ }),
 
 /***/ "./node_modules/kulbot-vm/src/dispatch/worker-dispatch.js":
-/*!**************************************************************!*\
+/*!****************************************************************!*\
   !*** ./node_modules/kulbot-vm/src/dispatch/worker-dispatch.js ***!
-  \**************************************************************/
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1047,9 +1047,9 @@ module.exports = new WorkerDispatch();
 /***/ }),
 
 /***/ "./node_modules/kulbot-vm/src/extension-support/argument-type.js":
-/*!*********************************************************************!*\
+/*!***********************************************************************!*\
   !*** ./node_modules/kulbot-vm/src/extension-support/argument-type.js ***!
-  \*********************************************************************/
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1115,9 +1115,9 @@ module.exports = ArgumentType;
 /***/ }),
 
 /***/ "./node_modules/kulbot-vm/src/extension-support/block-type.js":
-/*!******************************************************************!*\
+/*!********************************************************************!*\
   !*** ./node_modules/kulbot-vm/src/extension-support/block-type.js ***!
-  \******************************************************************/
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1176,9 +1176,9 @@ module.exports = BlockType;
 /***/ }),
 
 /***/ "./node_modules/kulbot-vm/src/extension-support/extension-worker.js":
-/*!************************************************************************!*\
+/*!**************************************************************************!*\
   !*** ./node_modules/kulbot-vm/src/extension-support/extension-worker.js ***!
-  \************************************************************************/
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1247,9 +1247,9 @@ global.Scratch.extensions = {
 /***/ }),
 
 /***/ "./node_modules/kulbot-vm/src/extension-support/target-type.js":
-/*!*******************************************************************!*\
+/*!*********************************************************************!*\
   !*** ./node_modules/kulbot-vm/src/extension-support/target-type.js ***!
-  \*******************************************************************/
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1275,9 +1275,9 @@ module.exports = TargetType;
 /***/ }),
 
 /***/ "./node_modules/kulbot-vm/src/util/log.js":
-/*!**********************************************!*\
+/*!************************************************!*\
   !*** ./node_modules/kulbot-vm/src/util/log.js ***!
-  \**********************************************/
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

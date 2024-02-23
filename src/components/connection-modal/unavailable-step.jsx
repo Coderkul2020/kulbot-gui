@@ -7,6 +7,7 @@ import Box from '../box/box.jsx';
 import Dots from './dots.jsx';
 import helpIcon from './icons/help.svg';
 import backIcon from './icons/back.svg';
+import download from './icons/download.svg';
 import usbAndBluetoothIcon from './icons/usb-and-bluetooth.svg';
 import scratchLinkIcon from './icons/scratchlink.svg';
 
@@ -87,6 +88,23 @@ const UnavailableStep = props => (
                         defaultMessage="Help"
                         description="Button to view help content"
                         id="gui.connection.unavailable.helpbutton"
+                    />
+                </button>
+                <button
+                    className={styles.connectionButton}
+                    onClick={()=>{
+                        window.open("https://drive.google.com/file/d/1cZjjZCIsPjE1W2dQOuXi4LRkgOULx4gR/view?usp=sharing");
+                    }}
+                >
+                    <img
+                        className={styles.buttonIconLeft}
+                        src={download}
+                        style={{width: "20px", height: "20px"}}
+                    />
+                    <FormattedMessage
+                        defaultMessage="Download"
+                        description="Button to download Kulbot Link"
+                        id="gui.connection.unavailable.downloadbutton"
                     />
                 </button>
             </Box>

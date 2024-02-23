@@ -18,5 +18,10 @@
     "id": "gui.connection.unavailable.helpbutton",
     "description": "Button to view help content",
     "defaultMessage": "Help"
+  },
+  {
+    "id": "gui.connection.unavailable.downloadbutton",
+    "description": "Button to download Kulbot Link",
+    "defaultMessage": "Download"
   }
 ]

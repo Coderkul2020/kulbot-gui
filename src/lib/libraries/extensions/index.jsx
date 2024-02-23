@@ -166,6 +166,27 @@ export default [
             />
         ),
         featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="sensor"
+                description="Name for the Sensor extension"
+                id="gui.extension.MyExtension.name"
+            />
+        ),
+        extensionId: 'myExtension',
+        collaborator: 'JoyLabz',
+        iconURL: makeymakeyIconURL,
+        insetIconURL: makeymakeyInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Make anything into a key."
+                description="Description for the 'Sensor' extension"
+                id="gui.extension.MyExtension.description"
+            />
+        ),
+        featured: true
     }
     // {
     //     name: 'LEGO MINDSTORMS EV3',
